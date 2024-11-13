@@ -406,9 +406,25 @@ span {
     overflow: hidden;
 }
 
+.portfolio-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
 .portfolio-box img {
     width: 100%;
+    aspect-ratio: 3/2;
+    object-fit: contain;
     transition: .5s ease;
+}
+
+.portfolio-box p a {
+    font-size: 2rem;
+    font-weight:400;
+    color: black;
 }
 
 .portfolio-box:hover img {
@@ -936,6 +952,7 @@ span {
         font-size: 4.5rem;
     }
 }
+
 img {
     border-radius: 20px;
 }
